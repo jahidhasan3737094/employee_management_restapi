@@ -4,9 +4,9 @@ spring:
     active: prod
 
   datasource:
-    url: jdbc:mysql://localhost:3306/employee_management
+    url: jdbc:mysql://viaduct.proxy.rlwy.net:26194/railway
     username: root
-    password: jahid37094
+    password: dhF-AcHeE15gd25EeFb6gEcdhD53Af52
   jpa:
     hibernate:
       ddl-auto: update
