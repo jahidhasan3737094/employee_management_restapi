@@ -6,6 +6,7 @@ import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.info.License;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @OpenAPIDefinition(
@@ -25,6 +26,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 		)
 )
+
+@PropertySource("classpath:application.yml")
 public class EmployeeManagementApplication {
 
 	public static void main(String[] args) {

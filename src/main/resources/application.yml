@@ -1,0 +1,44 @@
+# Common properties for all profiles
+spring:
+  profiles:
+    active: prod
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/employee_management
+    username: root
+    password: jahid37094
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+# Dev profile
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  doc:
+    api-docs:
+      path: /api-docs/dev
+
+# Prod profile
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  doc:
+    api-docs:
+      path: /api-docs/prod
+
+# Springdoc OpenAPI configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+
+# Java and Maven versions
+java:
+  runtime:
+    version: 17
+maven:
+  version: 3.8.1
